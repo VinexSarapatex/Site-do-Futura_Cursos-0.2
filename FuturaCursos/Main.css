@@ -1,0 +1,259 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+#bar{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+
+    box-shadow: 0 0 10px;
+    background-color: rgb(246, 246, 246);
+    transition: 0.4s;
+}
+#bar.scrollHide{
+    top: -90px;
+}
+
+
+
+#links{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.2s;
+}.link:hover{
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+    padding-left: 10px;
+    border-radius:  0  0 10px 0 ;
+    background-color: rgb(252, 252, 252);
+    transition: 0.2s;
+}
+
+.redes{
+    display: flex; 
+    gap: 50px; 
+    align-items: center;
+}
+.linkinstagram{
+    background-color: rgb(233, 233, 233);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    
+}.linkinstagram:hover{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    width: 50px;
+    height: 50px;
+}
+.instagram{
+    width: 40px;
+    transition: 0.2s;
+
+}.linkinstagram:hover .instagram{
+    filter: invert();
+}
+
+.linkfacebook{
+    background-color: rgb(233, 233, 233);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+.linkfacebook:hover{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(141, 141, 253);
+}
+
+.facebook{
+    width: 18px;
+    filter: grayscale();
+}
+.linkfacebook:hover .facebook{
+    filter: brightness(100);
+}
+
+.line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(59, 130, 52);
+}
+#main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+.backgroundColor{
+    width: 100%;
+    padding-top: 150px; 
+    padding-bottom: 100px;
+    background-color: rgb(219, 255, 164);
+    z-index: 1;
+
+}
+.MeninaFutura{
+    position: absolute;
+    right: 0px;
+    bottom: -3.5px;
+
+}
+.titles{
+    text-align: center;
+    font-size: 60px;
+    font: bold;
+}
+
+.subtitles{
+    text-align: center;
+    font-size: 30px;
+}
+
+.texts{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.informations{
+    display: flex; 
+    align-items: center; 
+    width: 55%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image{
+    width: 40%;
+    border-radius: 10px; 
+    box-shadow: 0 0 2px;
+}
+
+.image2{
+    width: 40%;
+    border-radius: 10px; 
+    box-shadow: 0 0 2px;
+}
+@media (max-width: 800px) {
+    #links{
+        padding-right: 15%;
+        width: 30%;
+    }
+    .link{
+        font-size: 20px;
+    }.link:hover{
+        font-size: 21px;
+    }
+
+    .image{
+        width: 50%;
+        height: 50%;
+    }
+
+    .redes{
+        gap: 2px;
+    }
+    .facebook{
+        width: 10px;
+    }
+    .linkfacebook{
+        width: 30px;
+        height: 30px;
+    }.linkfacebook:hover{
+        width: 31px;
+        height: 31px;
+    }
+    .instagram{
+        width: 20px;
+    }
+    .linkinstagram{
+        width: 30px;
+        height: 30px;
+    }.linkinstagram:hover{
+        width: 31px;
+        height: 31px;
+    }
+
+
+}
+
+@media(max-width: 700px){
+    .MeninaFutura{
+        display: none;
+    }
+}
+
+/* Para Celular */
+@media(max-width:500px){
+    .titles{
+        font-size: 30px;
+    }
+
+    .subtitles{
+        font-size: 25px;
+    }
+
+    .texts{
+        text-align: center;
+    }
+
+    .linkinstagram{
+        display: none;
+    }
+    .instagram{
+        display: none;
+    }.linkfacebook{
+        display: none;
+    }.facebook{
+        display: none;
+    }
+
+    .image{
+        display: none;
+    }
+    .image2{
+        display: block;
+        width: 100%;
+    }
+
+    .informations{
+        width: 100%;
+    }
+
+    #links{
+        width: 40%;
+    }
+}
